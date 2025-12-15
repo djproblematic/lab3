@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Лабораторна робота 3</title>
+    <title>Лабораторна робота №3 - Головна</title>
     <style>
       * {
         margin: 0;
@@ -46,81 +46,62 @@
         opacity: 0.9;
       }
 
-      nav {
-        background: #f8f9fa;
-        padding: 20px;
-        border-bottom: 2px solid #e9ecef;
-      }
-
-      nav ul {
-        list-style: none;
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 20px;
-      }
-
-      nav a {
-        text-decoration: none;
-        color: #667eea;
-        font-weight: 600;
-        padding: 10px 20px;
-        border-radius: 5px;
-        transition: background 0.3s;
-      }
-
-      nav a:hover {
-        background: #667eea;
-        color: white;
-      }
-
       main {
         padding: 40px;
-      }
-
-      section {
-        margin-bottom: 40px;
       }
 
       h2 {
         color: #667eea;
         font-size: 2em;
-        margin-bottom: 20px;
-        border-bottom: 3px solid #667eea;
-        padding-bottom: 10px;
+        margin-bottom: 30px;
+        text-align: center;
       }
 
-      .card {
-        background: #f8f9fa;
-        padding: 25px;
-        border-radius: 10px;
-        margin-bottom: 20px;
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        transition: transform 0.3s;
-      }
-
-      .card:hover {
-        transform: translateY(-5px);
-      }
-
-      .card h3 {
-        color: #764ba2;
-        margin-bottom: 15px;
-      }
-
-      .features {
+      .team-links {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        gap: 20px;
+        gap: 30px;
         margin-top: 30px;
       }
 
-      .feature-item {
-        background: white;
-        padding: 20px;
-        border-radius: 8px;
-        border-left: 4px solid #667eea;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      .team-card {
+        background: #f8f9fa;
+        padding: 30px;
+        border-radius: 10px;
+        text-align: center;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s, box-shadow 0.3s;
+      }
+
+      .team-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+      }
+
+      .team-card h3 {
+        color: #764ba2;
+        margin-bottom: 15px;
+        font-size: 1.8em;
+      }
+
+      .team-card p {
+        color: #666;
+        margin-bottom: 20px;
+      }
+
+      .team-card a {
+        display: inline-block;
+        padding: 12px 30px;
+        background: #667eea;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background 0.3s;
+        font-weight: 600;
+      }
+
+      .team-card a:hover {
+        background: #764ba2;
       }
 
       footer {
@@ -130,132 +111,32 @@
         padding: 30px;
         margin-top: 40px;
       }
-
-      .btn {
-        display: inline-block;
-        padding: 12px 30px;
-        background: #667eea;
-        color: white;
-        text-decoration: none;
-        border-radius: 5px;
-        margin-top: 15px;
-        transition: background 0.3s;
-      }
-
-      .btn:hover {
-        background: #764ba2;
-      }
     </style>
   </head>
   <body>
     <div class="container">
       <header>
         <h1>Лабораторна робота №3</h1>
-        <p>Веб-розробка та HTML</p>
+        <p>Команда веб-розробників</p>
       </header>
 
-      <nav>
-        <ul>
-          <li><a href="#home">Головна</a></li>
-          <li><a href="#about">Про проект</a></li>
-          <li><a href="#features">Особливості</a></li>
-          <li><a href="#contact">Контакти</a></li>
-        </ul>
-      </nav>
-
       <main>
-        <section id="home">
-          <h2>Ласкаво просимо!</h2>
-          <div class="card">
-            <h3>Вступ</h3>
+        <h2>Сторінки членів команди</h2>
+        <div class="team-links">
+          <div class="team-card">
+            <h3>Віктор</h3>
             <p>
-              Це сторінка створена в рамках лабораторної роботи №3. Тут
-              представлено приклад сучасного HTML-документу з красивим дизайном
-              та структурованим контентом.
+              Сторінка Віктора з сучасним дизайном та структурованим контентом
             </p>
-            <p>
-              Сторінка демонструє використання сучасних технологій веб-розробки,
-              включаючи CSS для стилізації та адаптивний дизайн.
-            </p>
+            <a href="viktor.html">Переглянути сторінку</a>
           </div>
-        </section>
 
-        <section id="about">
-          <h2>Про проект</h2>
-          <div class="card">
-            <h3>Мета проекту</h3>
-            <p>
-              Метою цієї лабораторної роботи є створення окремого HTML-файлу з
-              наповненням його якісним контентом. Кожен член команди створює
-              власну сторінку, що демонструє навички роботи з HTML та CSS.
-            </p>
+          <div class="team-card">
+            <h3>Діана</h3>
+            <p>Сторінка Діани з унікальним контентом та дизайном</p>
+            <a href="diana.html">Переглянути сторінку</a>
           </div>
-          <div class="card">
-            <h3>Технології</h3>
-            <ul style="margin-left: 20px; margin-top: 10px">
-              <li>HTML5 для структури контенту</li>
-              <li>CSS3 для стилізації та анімацій</li>
-              <li>Адаптивний дизайн для різних пристроїв</li>
-              <li>Сучасні градієнти та ефекти</li>
-            </ul>
-          </div>
-        </section>
-
-        <section id="features">
-          <h2>Особливості</h2>
-          <div class="features">
-            <div class="feature-item">
-              <h3>🎨 Сучасний дизайн</h3>
-              <p>
-                Використання градієнтів, тіней та плавних переходів для
-                створення привабливого інтерфейсу.
-              </p>
-            </div>
-            <div class="feature-item">
-              <h3>📱 Адаптивність</h3>
-              <p>
-                Сторінка коректно відображається на різних пристроях завдяки
-                адаптивному дизайну.
-              </p>
-            </div>
-            <div class="feature-item">
-              <h3>⚡ Швидкість</h3>
-              <p>Оптимізований код забезпечує швидке завантаження сторінки.</p>
-            </div>
-            <div class="feature-item">
-              <h3>♿ Доступність</h3>
-              <p>Семантична розмітка HTML покращує доступність контенту.</p>
-            </div>
-            <div class="feature-item">
-              <h3>🔍 SEO-оптимізація</h3>
-              <p>
-                Правильна структура та мета-теги сприяють кращій індексації
-                пошуковими системами.
-              </p>
-            </div>
-            <div class="feature-item">
-              <h3>💻 Чистий код</h3>
-              <p>
-                Добре структурований та коментований код для легкого
-                підтримування.
-              </p>
-            </div>
-          </div>
-        </section>
-
-        <section id="contact">
-          <h2>Контактна інформація</h2>
-          <div class="card">
-            <h3>Зв'яжіться з нами</h3>
-            <p>
-              Якщо у вас є питання або пропозиції щодо проекту, будь ласка,
-              зв'яжіться з командою.
-            </p>
-            <p><strong>Email:</strong> team@example.com</p>
-            <p><strong>Телефон:</strong> +380 XX XXX XX XX</p>
-            <a href="mailto:team@example.com" class="btn">Написати листа</a>
-          </div>
-        </section>
+        </div>
       </main>
 
       <footer>
